@@ -1,0 +1,1095 @@
+file 6870717 1583412982                                         
+version 2
+run Wireless03-0-20200305-20:53:48-1264
+attr configname Wireless03
+attr datetime 20200305-20:53:48
+attr experiment Wireless03
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network NCFSnNode
+attr processid 1264
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.runModeString "\"NC\""
+param *.host*.app[0].destAddresses "\"10.0.0.255\""
+param *.K 10
+param *.fileLength 10*1024*1024B
+param *.host*.mobility.typename "\"StationaryMobility\""
+param *.host*.mobility.constraintAreaMinX 100m
+param *.host*.mobility.constraintAreaMinY 50m
+param *.host*.mobility.constraintAreaMinZ 0m
+param *.host*.mobility.constraintAreaMaxX 650m
+param *.host*.mobility.constraintAreaMaxY 500m
+param *.host*.mobility.constraintAreaMaxZ 0m
+param *.host*.ipv4.arp.typename "\"GlobalArp\""
+param *.configurator.config "xml(\"<config><interface hosts='**' address='10.0.0.x' netmask='255.255.255.0'/><autoroute metric='errorRate'/></config>\")"
+param **.forceBroadcast true
+param *.host*.numApps 1
+param *.host*.app[0].typename "\"NCFSUdpBasicApp\""
+param *.host*.app[0].packetName "\"UDPData\""
+param *.host*.app[0].localPort 5000
+param *.host*.app[0].destPort 5000
+param *.hostA.app[0].destAddresses "\"10.0.0.255\""
+param *.hostA.app[0].startTime 1s
+param *.host*.app[0].startTime 0s
+param *.hostA.app[0].isBootNode true
+param *.host*.app[0].sendInterval 1s
+param *.host*.wlan[0].typename "\"WirelessInterface\""
+param *.host*.wlan[0].radio.typename "\"UnitDiskRadio\""
+param *.host*.wlan[0].mac.typename "\"CsmaCaMac\""
+param *.host*.wlan[0].mac.ackTimeout 300us
+param *.host*.wlan[0].mac.useAck false
+param *.host*.wlan[0].mac.mtu 10*1024*1024
+param *.host*.wlan[0].radio.transmitter.communicationRange 350m
+param *.host*.wlan[0].radio.receiver.ignoreInterference true
+param *.hostA.**.displayCommunicationRange true
+param *.K 10
+param *.fileLength 10*1024*1024B
+param *.host*.**.bitrate 20Mbps
+
+vector 0 NCFSnNode.hostA.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 NCFSnNode.hostC[0].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 2 NCFSnNode.hostC[1].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 NCFSnNode.hostC[2].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 4 NCFSnNode.hostC[3].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 5 NCFSnNode.hostC[4].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 6 NCFSnNode.hostC[5].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 7 NCFSnNode.hostC[6].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 8 NCFSnNode.hostC[7].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 9 NCFSnNode.hostC[8].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 10 NCFSnNode.hostC[9].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 11 NCFSnNode.hostC[10].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 12 NCFSnNode.hostC[11].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 13 NCFSnNode.hostC[12].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 14 NCFSnNode.hostC[13].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 15 NCFSnNode.hostC[14].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 16 NCFSnNode.hostC[15].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 17 NCFSnNode.hostC[16].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 18 NCFSnNode.hostC[17].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 19 NCFSnNode.hostC[18].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 20 NCFSnNode.hostC[19].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 21 NCFSnNode.hostC[20].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 22 NCFSnNode.hostC[21].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 23 NCFSnNode.hostC[22].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 24 NCFSnNode.hostC[23].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 25 NCFSnNode.hostC[24].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 26 NCFSnNode.hostA.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 27 NCFSnNode.hostC[0].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 28 NCFSnNode.hostC[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 29 NCFSnNode.hostC[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 30 NCFSnNode.hostC[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 31 NCFSnNode.hostC[4].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 32 NCFSnNode.hostC[5].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 33 NCFSnNode.hostC[6].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 34 NCFSnNode.hostC[7].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 35 NCFSnNode.hostC[8].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 36 NCFSnNode.hostC[9].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 37 NCFSnNode.hostC[10].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 38 NCFSnNode.hostC[11].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 39 NCFSnNode.hostC[12].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 40 NCFSnNode.hostC[13].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 41 NCFSnNode.hostC[14].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 42 NCFSnNode.hostC[15].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 43 NCFSnNode.hostC[16].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 44 NCFSnNode.hostC[17].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 45 NCFSnNode.hostC[18].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 46 NCFSnNode.hostC[19].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 47 NCFSnNode.hostC[20].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 48 NCFSnNode.hostC[21].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 49 NCFSnNode.hostC[22].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 50 NCFSnNode.hostC[23].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 51 NCFSnNode.hostC[24].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 52 NCFSnNode.hostA.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 53 NCFSnNode.hostA.lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 54 NCFSnNode.hostA.lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 55 NCFSnNode.hostA.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 56 NCFSnNode.hostA.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 57 NCFSnNode.hostA.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 58 NCFSnNode.hostC[13].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 59 NCFSnNode.hostC[13].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 60 NCFSnNode.hostC[21].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 61 NCFSnNode.hostC[21].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 62 NCFSnNode.hostC[2].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 63 NCFSnNode.hostC[2].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 64 NCFSnNode.hostC[0].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 65 NCFSnNode.hostC[0].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 66 NCFSnNode.hostC[1].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 67 NCFSnNode.hostC[1].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 68 NCFSnNode.hostC[20].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 69 NCFSnNode.hostC[20].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 70 NCFSnNode.hostC[4].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 71 NCFSnNode.hostC[4].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 72 NCFSnNode.hostC[15].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 73 NCFSnNode.hostC[15].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 74 NCFSnNode.hostC[17].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 75 NCFSnNode.hostC[17].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 76 NCFSnNode.hostC[10].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 77 NCFSnNode.hostC[10].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 78 NCFSnNode.hostC[12].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 79 NCFSnNode.hostC[12].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 80 NCFSnNode.hostC[24].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 81 NCFSnNode.hostC[24].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 82 NCFSnNode.hostC[3].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 83 NCFSnNode.hostC[3].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 84 NCFSnNode.hostC[18].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 85 NCFSnNode.hostC[18].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 86 NCFSnNode.hostC[8].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 87 NCFSnNode.hostC[8].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 88 NCFSnNode.hostC[7].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 89 NCFSnNode.hostC[7].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 90 NCFSnNode.hostC[23].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 91 NCFSnNode.hostC[23].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 92 NCFSnNode.hostC[14].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 93 NCFSnNode.hostC[14].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 94 NCFSnNode.hostC[16].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 95 NCFSnNode.hostC[16].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 96 NCFSnNode.hostC[9].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 97 NCFSnNode.hostC[9].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 98 NCFSnNode.hostC[19].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 99 NCFSnNode.hostC[19].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 100 NCFSnNode.hostC[11].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 101 NCFSnNode.hostC[11].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 102 NCFSnNode.hostC[6].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 103 NCFSnNode.hostC[6].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 104 NCFSnNode.hostC[22].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 105 NCFSnNode.hostC[22].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 106 NCFSnNode.hostC[5].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 107 NCFSnNode.hostC[5].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 108 NCFSnNode.hostC[13].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 109 NCFSnNode.hostC[13].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 110 NCFSnNode.hostC[13].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 111 NCFSnNode.hostC[2].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 112 NCFSnNode.hostC[2].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 113 NCFSnNode.hostC[2].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 114 NCFSnNode.hostC[0].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 115 NCFSnNode.hostC[0].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 116 NCFSnNode.hostC[0].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 117 NCFSnNode.hostC[15].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 118 NCFSnNode.hostC[15].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 119 NCFSnNode.hostC[15].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 120 NCFSnNode.hostC[12].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 121 NCFSnNode.hostC[12].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 122 NCFSnNode.hostC[12].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 123 NCFSnNode.hostC[24].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 124 NCFSnNode.hostC[24].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 125 NCFSnNode.hostC[24].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 126 NCFSnNode.hostC[3].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 127 NCFSnNode.hostC[3].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 128 NCFSnNode.hostC[3].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 129 NCFSnNode.hostC[8].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 130 NCFSnNode.hostC[8].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 131 NCFSnNode.hostC[8].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 132 NCFSnNode.hostC[23].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 133 NCFSnNode.hostC[23].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 134 NCFSnNode.hostC[23].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 135 NCFSnNode.hostC[14].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 136 NCFSnNode.hostC[14].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 137 NCFSnNode.hostC[14].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 138 NCFSnNode.hostC[16].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 139 NCFSnNode.hostC[16].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 140 NCFSnNode.hostC[16].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 141 NCFSnNode.hostC[19].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 142 NCFSnNode.hostC[19].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 143 NCFSnNode.hostC[19].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 144 NCFSnNode.hostC[6].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 145 NCFSnNode.hostC[6].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 146 NCFSnNode.hostC[6].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 147 NCFSnNode.hostC[16].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 148 NCFSnNode.hostC[19].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 149 NCFSnNode.hostC[23].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 150 NCFSnNode.hostC[2].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 151 NCFSnNode.hostC[13].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 152 NCFSnNode.hostC[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 153 NCFSnNode.hostC[12].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 154 NCFSnNode.hostC[15].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 155 NCFSnNode.hostC[3].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 156 NCFSnNode.hostC[24].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 157 NCFSnNode.hostC[14].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 158 NCFSnNode.hostC[8].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 159 NCFSnNode.hostC[6].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 160 NCFSnNode.hostC[21].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 161 NCFSnNode.hostC[21].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 162 NCFSnNode.hostC[21].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 163 NCFSnNode.hostC[1].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 164 NCFSnNode.hostC[1].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 165 NCFSnNode.hostC[1].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 166 NCFSnNode.hostC[20].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 167 NCFSnNode.hostC[20].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 168 NCFSnNode.hostC[20].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 169 NCFSnNode.hostC[4].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 170 NCFSnNode.hostC[4].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 171 NCFSnNode.hostC[4].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 172 NCFSnNode.hostC[10].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 173 NCFSnNode.hostC[10].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 174 NCFSnNode.hostC[10].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 175 NCFSnNode.hostC[18].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 176 NCFSnNode.hostC[18].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 177 NCFSnNode.hostC[18].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 178 NCFSnNode.hostC[9].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 179 NCFSnNode.hostC[9].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 180 NCFSnNode.hostC[9].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 181 NCFSnNode.hostC[11].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 182 NCFSnNode.hostC[11].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 183 NCFSnNode.hostC[11].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 184 NCFSnNode.hostC[22].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 185 NCFSnNode.hostC[22].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 186 NCFSnNode.hostC[22].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 187 NCFSnNode.hostC[20].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 188 NCFSnNode.hostC[22].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 189 NCFSnNode.hostC[1].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 190 NCFSnNode.hostC[4].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 191 NCFSnNode.hostC[21].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 192 NCFSnNode.hostC[18].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 193 NCFSnNode.hostC[10].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 194 NCFSnNode.hostC[11].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 195 NCFSnNode.hostC[9].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 196 NCFSnNode.hostC[17].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 197 NCFSnNode.hostC[17].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 198 NCFSnNode.hostC[17].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 199 NCFSnNode.hostC[17].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 200 NCFSnNode.hostC[5].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 201 NCFSnNode.hostC[5].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 202 NCFSnNode.hostC[5].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 203 NCFSnNode.hostC[5].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 204 NCFSnNode.hostC[7].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 205 NCFSnNode.hostC[7].lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 206 NCFSnNode.hostC[7].lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 207 NCFSnNode.hostC[7].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+0	40632 42436 0 353875 0 6.852256 1983 0 3 4952 12874
+1	83068 3107 0 354792 0 6.852627539346 119 0 3 292 758
+2	86175 3225 0 356070 0 6.853250183805 123 0 3 302 784
+3	89400 3041 0 351671 0 6.804109182034 117 0 3 287 745
+4	92441 3213 0 355896 0 6.853160072832 123 0 3 302 784
+5	95654 3227 0 355364 0 6.852948857394 123 0 3 302 784
+6	98881 2957 0 355645 0 6.853019461388 113 0 3 277 719
+7	101838 3497 0 354255 0 6.852306550374 133 0 3 327 849
+8	105335 3019 0 351824 0 6.804159612008 115 0 3 282 732
+9	108354 3105 0 355215 0 6.852778915357 119 0 3 292 758
+10	111459 3388 0 350826 0 6.803567017969 125 0 3 307 797
+11	114847 3504 0 355544 0 6.85301864895 129 0 3 317 823
+12	118351 3178 0 354945 0 6.852678020387 117 0 3 287 745
+13	121529 3164 0 351522 0 6.803979318201 117 0 3 287 745
+14	124693 3235 0 355715 0 6.853110044582 119 0 3 292 758
+15	127928 3732 0 350396 0 6.803466294762 137 0 3 337 875
+16	131660 3228 0 355895 0 6.853160038666 119 0 3 292 758
+17	134888 3730 0 356223 0 6.853300312307 137 0 3 337 875
+18	138618 3174 0 354174 0 6.852305971664 117 0 3 287 745
+19	141792 2792 0 354502 0 6.852467104856 103 0 3 252 654
+20	144584 3286 0 351127 0 6.803767889035 121 0 3 297 771
+21	147870 3282 0 351033 0 6.803697600311 121 0 3 297 771
+22	151152 3122 0 354349 0 6.852377123369 115 0 3 282 732
+23	154274 3222 0 347321 0 6.753407365688 119 0 3 292 758
+24	157496 3610 0 355078 0 6.852728726646 133 0 3 327 849
+25	161106 3456 0 354643 0 6.852537472853 127 0 3 312 810
+26	164562 116206 0 356309 0 6.85330103774 4586 0 3 6202 13752
+27	280768 126597 0 356284 0 6.853300881851 4583 0 3 9019 22207
+28	407365 126601 0 356274 0 6.853300840809 4582 0 3 9011 22183
+29	533966 126583 0 356279 0 6.853300851161 4582 0 3 9020 22210
+30	660549 124441 0 356244 0 6.853300653258 4504 0 3 8853 21807
+31	784990 126564 0 356269 0 6.853300830941 4583 0 3 9013 22189
+32	911554 111566 0 356289 0 6.853300919691 4038 0 3 7935 19611
+33	1023120 114538 0 356314 0 6.853301058618 4146 0 3 8121 20037
+34	1137658 112070 0 356171 0 6.853251044694 4057 0 3 7970 19716
+35	1249728 122394 0 356229 0 6.85330051733 4503 0 3 8858 21824
+36	1372122 117222 0 356224 0 6.853300367304 4317 0 3 8476 20912
+37	1489344 124333 0 356249 0 6.853300659184 4503 0 3 8843 21779
+38	1613677 114514 0 356264 0 6.853300766197 4147 0 3 8147 20123
+39	1728191 122302 0 356239 0 6.85330061325 4502 0 3 8859 21827
+40	1850493 126628 0 356304 0 6.853301029656 4585 0 3 9021 22209
+41	1977121 111818 0 356176 0 6.853251176702 4046 0 3 7916 19562
+42	2088939 117356 0 356329 0 6.853301358754 4249 0 3 8348 20612
+43	2206295 119269 0 356223 0 6.853300312307 4317 0 3 8458 20858
+44	2325564 126603 0 356259 0 6.853300743977 4584 0 3 9023 22217
+45	2452167 119730 0 356319 0 6.853301123669 4336 0 3 8546 21096
+46	2571897 94678 0 356191 0 6.853251285815 3426 0 3 6699 16609
+47	2666575 126619 0 356324 0 6.85330124002 4584 0 3 9016 22194
+48	2793194 126670 0 356294 0 6.853300930281 4586 0 3 9029 22233
+49	2919864 116735 0 356234 0 6.853300560963 4226 0 3 8302 20496
+50	3036599 116802 0 356299 0 6.853301007278 4228 0 3 8286 20446
+51	3153401 124454 0 356254 0 6.853300729298 4505 0 3 8849 21795
+52	3277855 17860 53 352410 1 6.85 990 22 22 21780 479160
+53	3295715 17860 73 352439 1 6.85 990 42 42 41580 1746360
+54	3313575 17860 73 352439 1 6.85 990 42 42 41580 1746360
+55	3331435 51258 103 356312 1 6.85330103774 2159 22 22 47498 1044956
+56	3382693 54469 103 356312 1 6.85330103774 2159 1 2159 2331720 3356899560
+57	3437162 88778 123 353875 1.00026 6.852256 3960 0 2 3960 5940
+58	3525940 61772 154 356307 1.000289679822 6.853301029656 2158 22 22 47476 1044472
+59	3587712 64981 154 356307 1.000289679822 6.853301029656 2158 1 2158 2329561 3352238279
+60	3652693 61805 159 356297 1.000289759142 6.853300930281 2159 22 22 47498 1044956
+61	3714498 65016 159 356297 1.000289759142 6.853300930281 2159 1 2159 2331720 3356899560
+62	3779514 61767 164 356282 1.000289863807 6.853300851161 2157 22 22 47454 1043988
+63	3841281 64974 164 356282 1.000289863807 6.853300851161 2157 1 2157 2327403 3347581315
+64	3906255 61788 169 356287 1.000289887693 6.853300881851 2158 22 22 47476 1044472
+65	3968043 64997 169 356287 1.000289887693 6.853300881851 2158 1 2158 2329561 3352238279
+66	4033040 61762 174 356277 1.000289901058 6.853300840809 2157 22 22 47454 1043988
+67	4094802 64969 174 356277 1.000289901058 6.853300840809 2157 1 2157 2327403 3347581315
+68	4159771 61751 179 356327 1.000289907606 6.85330124002 2157 22 22 47454 1043988
+69	4221522 64958 179 356327 1.000289907606 6.85330124002 2157 1 2157 2327403 3347581315
+70	4286480 61768 184 356272 1.000289929903 6.853300830941 2158 22 22 47476 1044472
+71	4348248 64977 184 356272 1.000289929903 6.853300830941 2158 1 2158 2329561 3352238279
+72	4413225 58195 189 356332 1.000289943599 6.853301358754 2033 22 22 44726 983972
+73	4471420 61154 189 356332 1.000289943599 6.853301358754 2033 1 2033 2067561 2802923529
+74	4532574 61771 194 356262 1.000289971664 6.853300743977 2158 22 22 47476 1044472
+75	4594345 64980 194 356262 1.000289971664 6.853300743977 2158 1 2158 2329561 3352238279
+76	4659325 60904 199 356252 1.000289994517 6.853300659184 2128 22 22 46816 1029952
+77	4720229 64053 199 356252 1.000289994517 6.853300659184 2128 1 2128 2265256 3214398264
+78	4784282 59824 204 356242 1.00029002455 6.85330061325 2127 22 22 46794 1029468
+79	4844106 62971 204 356242 1.00029002455 6.85330061325 2127 1 2127 2263128 3209869880
+80	4907077 60954 209 356257 1.000290033163 6.853300729298 2129 22 22 46838 1030436
+81	4968031 64105 209 356257 1.000290033163 6.853300729298 2129 1 2129 2267385 3218930905
+82	5032136 60934 214 356247 1.000290063393 6.853300653258 2128 22 22 46816 1029952
+83	5093070 64083 214 356247 1.000290063393 6.853300653258 2128 1 2128 2265256 3214398264
+84	5157153 59099 219 356322 1.000290093277 6.853301123669 2065 22 22 45430 999460
+85	5216252 62122 219 356322 1.000290093277 6.853301123669 2065 1 2065 2133145 2937340665
+86	5278374 59872 224 356232 1.00029012041 6.85330051733 2128 22 22 46816 1029952
+87	5338246 63021 224 356232 1.00029012041 6.85330051733 2128 1 2128 2265256 3214398264
+88	5401267 56116 229 356174 1.000290188955 6.853251044694 1960 22 22 43120 948640
+89	5457383 58929 229 356174 1.000290188955 6.853251044694 1960 1 1960 1921780 2511766460
+90	5516312 57895 234 356302 1.000290214967 6.853301007278 2022 22 22 44484 978648
+91	5574207 60832 234 356302 1.000290214967 6.853301007278 2022 1 2022 2045253 2757682795
+92	5635039 55933 239 356179 1.000290294762 6.853251176702 1953 22 22 42966 945252
+93	5690972 58732 239 356179 1.000290294762 6.853251176702 1953 1 1953 1908081 2484957489
+94	5749704 58957 244 356144 1.000290325433 6.853250712307 2059 22 22 45298 996556
+95	5808661 61968 244 356144 1.000290325433 6.853250712307 2059 1 2059 2120770 2911817210
+96	5870629 57879 249 356227 1.00029037974 6.853300367304 2059 22 22 45298 996556
+97	5928508 60890 249 356227 1.00029037974 6.853300367304 2059 1 2059 2120770 2911817210
+98	5989398 48177 254 356194 1.000290437723 6.853251285815 1682 22 22 37004 814088
+99	6037575 50434 254 356194 1.000290437723 6.853251285815 1682 1 1682 1415403 1587610365
+100	6088009 58883 259 356267 1.000290499556 6.853300766197 1988 22 22 43736 962192
+101	6146892 61752 259 356267 1.000290499556 6.853300766197 1988 1 1988 1977066 2620930494
+102	6208644 58758 264 356317 1.000290550374 6.853301058618 1983 22 22 43626 959772
+103	6267402 61617 264 356317 1.000290550374 6.853301058618 1983 1 1983 1967136 2601209504
+104	6329019 59882 269 356237 1.000290573822 6.853300560963 2021 22 22 44462 978164
+105	6388901 62817 269 356237 1.000290573822 6.853300560963 2021 1 2021 2043231 2753594311
+106	6451718 57523 274 356292 1.000290636909 6.853300919691 1941 22 22 42702 939444
+107	6509241 60298 274 356292 1.000290636909 6.853300919691 1941 1 1941 1884711 2439444271
+108	6569539 1722 1533 353881 1.002996079822 6.852256079822 58 22 22 1276 28072
+109	6571261 1722 1535 353883 1.002996079822 6.852256079822 58 42 42 2436 102312
+110	6572983 1722 1535 353883 1.002996079822 6.852256079822 58 42 42 2436 102312
+111	6574705 1688 1550 350077 1.002996263807 6.803416263807 57 22 22 1254 27588
+112	6576393 1688 1552 350079 1.002996263807 6.803416263807 57 42 42 2394 100548
+113	6578081 1688 1552 350079 1.002996263807 6.803416263807 57 42 42 2394 100548
+114	6579769 1723 1562 353910 1.002996287693 6.852256287693 58 22 22 1276 28072
+115	6581492 1723 1564 353912 1.002996287693 6.852256287693 58 42 42 2436 102312
+116	6583215 1723 1564 353912 1.002996287693 6.852256287693 58 42 42 2436 102312
+117	6584938 1721 1589 353951 1.002996343599 6.852256343599 58 22 22 1276 28072
+118	6586659 1721 1591 353953 1.002996343599 6.852256343599 58 42 42 2436 102312
+119	6588380 1721 1591 353953 1.002996343599 6.852256343599 58 42 42 2436 102312
+120	6590101 1639 1611 350159 1.00299642455 6.80341642455 57 22 22 1254 27588
+121	6591740 1639 1613 350161 1.00299642455 6.80341642455 57 42 42 2394 100548
+122	6593379 1639 1613 350161 1.00299642455 6.80341642455 57 42 42 2394 100548
+123	6595018 1839 1623 353992 1.002996433163 6.852256433163 62 22 22 1364 30008
+124	6596857 1839 1625 353994 1.002996433163 6.852256433163 62 42 42 2604 109368
+125	6598696 1839 1625 353994 1.002996433163 6.852256433163 62 42 42 2604 109368
+126	6600535 1779 1635 354004 1.002996463393 6.852256463393 60 22 22 1320 29040
+127	6602314 1779 1637 354006 1.002996463393 6.852256463393 60 42 42 2520 105840
+128	6604093 1779 1637 354006 1.002996463393 6.852256463393 60 42 42 2520 105840
+129	6605872 1666 1652 354028 1.00299652041 6.85225652041 58 22 22 1276 28072
+130	6607538 1666 1654 354030 1.00299652041 6.85225652041 58 42 42 2436 102312
+131	6609204 1666 1654 354030 1.00299652041 6.85225652041 58 42 42 2436 102312
+132	6610870 1927 1669 354045 1.002996614967 6.852256614967 65 22 22 1430 31460
+133	6612797 1927 1671 354047 1.002996614967 6.852256614967 65 42 42 2730 114660
+134	6614724 1927 1671 354047 1.002996614967 6.852256614967 65 42 42 2730 114660
+135	6616651 1987 1681 350229 1.002996694762 6.803416694762 67 22 22 1474 32428
+136	6618638 1987 1683 350231 1.002996694762 6.803416694762 67 42 42 2814 118188
+137	6620625 1987 1683 350231 1.002996694762 6.803416694762 67 42 42 2814 118188
+138	6622612 1993 1693 354062 1.002996725433 6.852256725433 67 22 22 1474 32428
+139	6624605 1993 1695 354064 1.002996725433 6.852256725433 67 42 42 2814 118188
+140	6626598 1993 1695 354064 1.002996725433 6.852256725433 67 42 42 2814 118188
+141	6628591 1751 1710 350265 1.002996837723 6.803416837723 59 22 22 1298 28556
+142	6630342 1751 1712 350267 1.002996837723 6.803416837723 59 42 42 2478 104076
+143	6632093 1751 1712 350267 1.002996837723 6.803416837723 59 42 42 2478 104076
+144	6633844 1933 1727 354096 1.002996950374 6.852256950374 65 22 22 1430 31460
+145	6635777 1933 1729 354098 1.002996950374 6.852256950374 65 42 42 2730 114660
+146	6637710 1933 1729 354098 1.002996950374 6.852256950374 65 42 42 2730 114660
+147	6639643 7668 1744 356223 1.003056725433 6.853300312307 268 0 2 268 402
+148	6647311 6748 1885 351127 1.003096837723 6.803767889035 236 0 2 236 354
+149	6654059 7420 1928 355078 1.003127020404 6.852728726646 260 0 2 260 390
+150	6661479 6484 2107 351671 1.00323701175 6.804109182034 228 0 2 228 342
+151	6667963 6642 2260 355715 1.003286921259 6.853110044582 232 0 2 232 348
+152	6674605 6624 2413 354792 1.003356863961 6.852627539346 232 0 2 232 348
+153	6681229 6496 2418 351522 1.003356941717 6.803979318201 228 0 2 228 342
+154	6687725 6628 2615 355895 1.003447290535 6.853160038666 232 0 2 232 348
+155	6694353 6852 2752 355896 1.003537697137 6.853160072832 240 0 2 240 360
+156	6701205 7100 2901 354643 1.003607374257 6.852537472853 248 0 2 248 372
+157	6708305 7672 3050 350396 1.003677856147 6.803466294762 268 0 2 268 402
+158	6715977 6620 3179 355215 1.003788564511 6.852778915357 232 0 2 232 348
+159	6722597 7460 3328 354255 1.003878904955 6.852306550374 260 0 2 260 390
+160	6730057 1663 4977 353893 2.002816159142 6.852256159142 56 22 22 1232 27104
+161	6731720 1663 4979 353895 2.002816159142 6.852256159142 56 42 42 2352 98784
+162	6733383 1663 4979 353895 2.002816159142 6.852256159142 56 42 42 2352 98784
+163	6735046 1783 5008 353922 2.002816301058 6.852256301058 60 22 22 1320 29040
+164	6736829 1783 5010 353924 2.002816301058 6.852256301058 60 42 42 2520 105840
+165	6738612 1783 5010 353924 2.002816301058 6.852256301058 60 42 42 2520 105840
+166	6740395 1749 5020 350106 2.002816307606 6.803416307606 59 22 22 1298 28556
+167	6742144 1749 5022 350108 2.002816307606 6.803416307606 59 42 42 2478 104076
+168	6743893 1749 5022 350108 2.002816307606 6.803416307606 59 42 42 2478 104076
+169	6745642 1784 5033 353939 2.002816329903 6.852256329903 60 22 22 1320 29040
+170	6747426 1784 5035 353941 2.002816329903 6.852256329903 60 42 42 2520 105840
+171	6749210 1784 5035 353941 2.002816329903 6.852256329903 60 42 42 2520 105840
+172	6750994 1871 5057 353975 2.002816394517 6.852256394517 63 22 22 1386 30492
+173	6752865 1871 5059 353977 2.002816394517 6.852256394517 63 42 42 2646 111132
+174	6754736 1871 5059 353977 2.002816394517 6.852256394517 63 42 42 2646 111132
+175	6756607 1487 5092 354016 2.002816493277 6.852256493277 50 22 22 1100 24200
+176	6758094 1487 5094 354018 2.002816493277 6.852256493277 50 42 42 2100 88200
+177	6759581 1487 5094 354018 2.002816493277 6.852256493277 50 42 42 2100 88200
+178	6761068 1754 5153 350253 2.00281677974 6.80341677974 61 22 22 1342 29524
+179	6762822 1754 5155 350255 2.00281677974 6.80341677974 61 42 42 2562 107604
+180	6764576 1754 5155 350255 2.00281677974 6.80341677974 61 42 42 2562 107604
+181	6766330 1691 5173 354084 2.002816899556 6.852256899556 57 22 22 1254 27588
+182	6768021 1691 5175 354086 2.002816899556 6.852256899556 57 42 42 2394 100548
+183	6769712 1691 5175 354086 2.002816899556 6.852256899556 57 42 42 2394 100548
+184	6771403 1720 5198 346699 2.002816973822 6.753136973822 58 22 22 1276 28072
+185	6773123 1720 5200 346701 2.002816973822 6.753136973822 58 42 42 2436 102312
+186	6774843 1720 5200 346701 2.002816973822 6.753136973822 58 42 42 2436 102312
+187	6776563 6740 5343 351033 2.002926480499 6.803697600311 236 0 2 236 354
+188	6783303 6616 5504 347321 2.003017245774 6.753407365688 232 0 2 232 348
+189	6789919 6876 5847 356070 2.003117517925 6.853250183805 240 0 2 240 360
+190	6796795 6880 6290 355364 2.003287731363 6.852948857394 240 0 2 240 360
+191	6803675 6408 6443 354349 2.003377502439 6.852377123369 224 0 2 224 336
+192	6810083 5724 6448 354502 2.003377657474 6.852467104856 200 0 2 200 300
+193	6815807 7200 6778 355544 2.003518515489 6.85301864895 252 0 2 252 378
+194	6823007 6524 6927 354945 2.003668772032 6.852678020387 228 0 2 228 342
+195	6829531 6960 7060 350826 2.003778831817 6.803567017969 244 0 2 244 366
+196	6836491 1692 8789 353963 2.053136371664 6.852256371664 57 22 22 1254 27588
+197	6838183 1692 8791 353965 2.053136371664 6.852256371664 57 42 42 2394 100548
+198	6839875 1692 8791 353965 2.053136371664 6.852256371664 57 42 42 2394 100548
+199	6841567 6516 8794 354174 2.053136371664 6.852305971664 228 0 2 228 342
+200	6848083 1635 8959 354113 2.053137036909 6.852257036909 55 22 22 1210 26620
+201	6849718 1635 8961 354115 2.053137036909 6.852257036909 55 42 42 2310 97020
+202	6851353 1635 8961 354115 2.053137036909 6.852257036909 55 42 42 2310 97020
+203	6852988 6300 10415 355645 2.053888331767 6.853019461388 220 0 2 220 330
+204	6859288 1665 12843 350212 2.102096588955 6.803416588955 56 22 22 1232 27104
+205	6860953 1665 12845 350214 2.102096588955 6.803416588955 56 42 42 2352 98784
+206	6862618 1665 12845 350214 2.102096588955 6.803416588955 56 42 42 2352 98784
+207	6864283 6432 12848 351824 2.102096588955 6.804159612008 224 0 2 224 336
+

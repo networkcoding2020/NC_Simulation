@@ -1,0 +1,49 @@
+file 1736 1583311074                                            
+version 2
+run General-0-20200304-16:37:31-7844
+attr configname General
+attr datetime 20200304-16:37:31
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network NCFSNetworkBase
+attr processid 7844
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.host*.ipv4.arp.typename "\"GlobalArp\""
+param *.configurator.config "xml(\"<config><interface hosts='**' address='10.0.0.x' netmask='255.255.255.0'/><autoroute metric='errorRate'/></config>\")"
+param **.forceBroadcast true
+param *.host*.numApps 1
+param *.host*.app[0].typename "\"NCFSUdpBasicApp\""
+param *.host*.app[0].packetName "\"UDPData\""
+param *.host*.app[0].localPort 5000
+param *.host*.app[0].destPort 5000
+param *.hostA.app[0].destAddresses "\"10.0.0.255\""
+param *.hostA.app[0].startTime 1s
+param *.host*.app[0].startTime 0s
+param *.hostA.app[0].isBootNode true
+param *.host*.app[0].sendInterval 1s
+param *.host*.wlan[0].typename "\"WirelessInterface\""
+param *.host*.wlan[0].radio.typename "\"UnitDiskRadio\""
+param *.host*.wlan[0].mac.typename "\"CsmaCaMac\""
+param *.host*.wlan[0].mac.ackTimeout 300us
+param *.host*.wlan[0].mac.useAck false
+param *.host*.wlan[0].mac.mtu 10*1024*1024
+param *.host*.wlan[0].radio.transmitter.communicationRange 300m
+param *.host*.wlan[0].radio.receiver.ignoreInterference true
+param *.hostA.**.displayCommunicationRange true
+param *.K 10
+param *.fileLength 10*1024*1024B
+param *.host*.**.bitrate 20Mbps
+
+vector 0 NCFSNetworkBase.hostA.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+0	1725 9 0 0 0 0 1 0 0 0 0
+

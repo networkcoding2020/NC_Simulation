@@ -1,0 +1,299 @@
+version 2
+run Wireless01-0-20200203-19:27:30-4928
+attr configname Wireless01
+attr datetime 20200203-19:27:30
+attr experiment Wireless01
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network NCFSWirelessNetwork
+attr processid 4928
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.runModeString "\"NC\""
+param *.host*.ipv4.arp.typename "\"GlobalArp\""
+param *.configurator.config "xml(\"<config><interface hosts='**' address='10.0.0.x' netmask='255.255.255.0'/><autoroute metric='errorRate'/></config>\")"
+param **.forceBroadcast true
+param *.host*.numApps 1
+param *.host*.app[0].typename "\"NCFSUdpBasicApp\""
+param *.host*.app[0].packetName "\"UDPData\""
+param *.host*.app[0].localPort 5000
+param *.host*.app[0].destPort 5000
+param *.hostA.app[0].destAddresses "\"10.0.0.255\""
+param *.hostA.app[0].startTime 1s
+param *.host*.app[0].startTime 0s
+param *.hostA.app[0].isBootNode true
+param *.host*.app[0].sendInterval 3s
+param *.host*.wlan[0].typename "\"WirelessInterface\""
+param *.host*.wlan[0].radio.typename "\"UnitDiskRadio\""
+param *.host*.wlan[0].mac.typename "\"CsmaCaMac\""
+param *.host*.wlan[0].mac.ackTimeout 300us
+param *.host*.wlan[0].mac.useAck false
+param *.host*.wlan[0].mac.mtu 10*1024*1024
+param *.host*.wlan[0].radio.transmitter.communicationRange 150m
+param *.host*.wlan[0].radio.receiver.ignoreInterference true
+param *.hostA.**.displayCommunicationRange true
+param *.K 10
+param *.fileLength 10*1024*1024B
+param *.host*.**.bitrate 20Mbps
+
+vector 0 NCFSWirelessNetwork.hostA.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 NCFSWirelessNetwork.hostB.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 2 NCFSWirelessNetwork.hostA.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 3 NCFSWirelessNetwork.hostB.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 4 NCFSWirelessNetwork.hostA.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 5 NCFSWirelessNetwork.hostA.lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 6 NCFSWirelessNetwork.hostA.lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 7 NCFSWirelessNetwork.hostA.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 8 NCFSWirelessNetwork.hostA.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 9 NCFSWirelessNetwork.hostA.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 10 NCFSWirelessNetwork.hostB.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 11 NCFSWirelessNetwork.hostB.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 12 NCFSWirelessNetwork.hostB.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 13 NCFSWirelessNetwork.hostB.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 14 NCFSWirelessNetwork.hostA.app[0] packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 15 NCFSWirelessNetwork.hostB.app[0] packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 16 NCFSWirelessNetwork.hostB.app[0] throughput:vector ETV
+attr source throughput(packetReceived)
+attr title "throughput, vector"
+attr unit bps
+vector 17 NCFSWirelessNetwork.hostB.app[0] rcvdPkLifetime:vector ETV
+attr interpolationmode none
+attr source dataAge(packetReceived)
+attr title "received packet lifetime, vector"
+attr unit s
+0	0	0	0
+0	0	0	0
+0	0	0	2
+0	12	1.00014	3
+0	15	1.0002048	2
+0	36	1.000834447306	3
+0	41	1.420297647306	2
+0	56	5.50008	3
+0	59	5.5001448	2
+0	80	5.501114447306	3
+0	85	5.920577647306	2
+0	100	10.00024	3
+0	103	10.0003048	2
+1	0	0	0
+1	0	0	0
+1	0	0	2
+1	24	1.000385223653	3
+1	27	1.000414023653	2
+1	68	5.500605223653	3
+1	71	5.500634023653	2
+1	112	10.000825223653	3
+2	0	0	1
+2	12	1.00014	0
+2	15	1.0002048	1
+2	26	1.000385647306	3
+2	28	1.000414447306	1
+2	36	1.000834447306	0
+2	41	1.420297647306	1
+2	56	5.50008	0
+2	59	5.5001448	1
+2	70	5.500605647306	3
+2	72	5.500634447306	1
+2	80	5.501114447306	0
+2	85	5.920577647306	1
+2	100	10.00024	0
+2	103	10.0003048	1
+2	114	10.000825647306	3
+3	0	0	1
+3	14	1.000140423653	3
+3	16	1.000205223653	1
+3	24	1.000385223653	0
+3	27	1.000414023653	1
+3	38	1.000834870959	3
+3	42	1.420298070959	1
+3	58	5.500080423653	3
+3	60	5.500145223653	1
+3	68	5.500605223653	0
+3	71	5.500634023653	1
+3	82	5.501114870959	3
+3	86	5.920578070959	1
+3	102	10.000240423653	3
+3	104	10.000305223653	1
+3	112	10.000825223653	0
+4	5	1	110
+4	33	1.000414447306	1048606
+4	49	5.5	110
+4	77	5.500634447306	1048606
+4	93	10	110
+5	7	1	130
+5	51	5.5	130
+5	95	10	130
+6	7	1	130
+6	51	5.5	130
+6	95	10	130
+7	10	1	110
+7	31	1.000414447306	20
+7	54	5.5	110
+7	75	5.500634447306	20
+7	98	10	110
+8	10	1	1
+8	31	1.000414447306	2
+8	54	5.5	3
+8	75	5.500634447306	4
+8	98	10	5
+9	12	1.00014	1
+9	13	1.00014	2
+9	15	1.0002048	1
+9	15	1.0002048	0
+9	36	1.000834447306	1
+9	37	1.000834447306	2
+9	41	1.420297647306	1
+9	41	1.420297647306	0
+9	56	5.50008	1
+9	57	5.50008	2
+9	59	5.5001448	1
+9	59	5.5001448	0
+9	80	5.501114447306	1
+9	81	5.501114447306	2
+9	85	5.920577647306	1
+9	85	5.920577647306	0
+9	100	10.00024	1
+9	101	10.00024	2
+9	103	10.0003048	1
+9	103	10.0003048	0
+10	19	1.000205223653	110
+10	45	1.420298070959	1048606
+10	63	5.500145223653	110
+10	89	5.920578070959	1048606
+10	107	10.000305223653	110
+11	19	1.000205223653	1
+11	45	1.420298070959	2
+11	63	5.500145223653	3
+11	89	5.920578070959	4
+11	107	10.000305223653	5
+12	21	1.000205223653	20
+12	65	5.500145223653	20
+12	109	10.000305223653	20
+13	24	1.000385223653	1
+13	25	1.000385223653	2
+13	27	1.000414023653	1
+13	27	1.000414023653	0
+13	68	5.500605223653	1
+13	69	5.500605223653	2
+13	71	5.500634023653	1
+13	71	5.500634023653	0
+13	112	10.000825223653	1
+13	113	10.000825223653	2
+14	32	1.000414447306	1048598
+14	76	5.500634447306	1048598
+15	46	1.420298070959	1048598
+15	90	5.920578070959	1048598
+16	46	0.1	0
+16	46	0.2	0
+16	46	0.3	0
+16	46	0.4	0
+16	46	0.5	0
+16	46	0.6	0
+16	46	0.7	0
+16	46	0.8	0
+16	46	0.9	0
+16	46	1	0
+16	46	1.1	0
+16	46	1.2	0
+16	46	1.3	0
+16	46	1.4	0
+16	90	1.5	83887840
+16	90	1.6	0
+16	90	1.7	0
+16	90	1.8	0
+16	90	1.9	0
+16	90	2	0
+16	90	2.1	0
+16	90	2.2	0
+16	90	2.3	0
+16	90	2.4	0
+16	90	2.5	0
+16	90	2.6	0
+16	90	2.7	0
+16	90	2.8	0
+16	90	2.9	0
+16	90	3	0
+16	90	3.1	0
+16	90	3.2	0
+16	90	3.3	0
+16	90	3.4	0
+16	90	3.5	0
+16	90	3.6	0
+16	90	3.7	0
+16	90	3.8	0
+16	90	3.9	0
+16	90	4	0
+16	90	4.1	0
+16	90	4.2	0
+16	90	4.3	0
+16	90	4.4	0
+16	90	4.5	0
+16	90	4.6	0
+16	90	4.7	0
+16	90	4.8	0
+16	90	4.9	0
+16	90	5	0
+16	90	5.1	0
+16	90	5.2	0
+16	90	5.3	0
+16	90	5.4	0
+16	90	5.5	0
+16	90	5.6	0
+16	90	5.7	0
+16	90	5.8	0
+16	90	5.9	0
+17	46	1.420298070959	0.419883623653
+17	90	5.920578070959	0.419943623653
+

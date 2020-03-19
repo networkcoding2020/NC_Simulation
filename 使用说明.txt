@@ -1,0 +1,5 @@
+1.将文件放入examples目录下
+
+2.将src目录下的文件放入下面目录：src\inet\applications\udpapp
+  然后删除src文件
+

@@ -1,0 +1,136 @@
+file 8286 1580729282                                            
+version 2
+run Wireless01-0-20200203-19:27:30-4928
+attr configname Wireless01
+attr datetime 20200203-19:27:30
+attr experiment Wireless01
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network NCFSWirelessNetwork
+attr processid 4928
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.runModeString "\"NC\""
+param *.host*.ipv4.arp.typename "\"GlobalArp\""
+param *.configurator.config "xml(\"<config><interface hosts='**' address='10.0.0.x' netmask='255.255.255.0'/><autoroute metric='errorRate'/></config>\")"
+param **.forceBroadcast true
+param *.host*.numApps 1
+param *.host*.app[0].typename "\"NCFSUdpBasicApp\""
+param *.host*.app[0].packetName "\"UDPData\""
+param *.host*.app[0].localPort 5000
+param *.host*.app[0].destPort 5000
+param *.hostA.app[0].destAddresses "\"10.0.0.255\""
+param *.hostA.app[0].startTime 1s
+param *.host*.app[0].startTime 0s
+param *.hostA.app[0].isBootNode true
+param *.host*.app[0].sendInterval 3s
+param *.host*.wlan[0].typename "\"WirelessInterface\""
+param *.host*.wlan[0].radio.typename "\"UnitDiskRadio\""
+param *.host*.wlan[0].mac.typename "\"CsmaCaMac\""
+param *.host*.wlan[0].mac.ackTimeout 300us
+param *.host*.wlan[0].mac.useAck false
+param *.host*.wlan[0].mac.mtu 10*1024*1024
+param *.host*.wlan[0].radio.transmitter.communicationRange 150m
+param *.host*.wlan[0].radio.receiver.ignoreInterference true
+param *.hostA.**.displayCommunicationRange true
+param *.K 10
+param *.fileLength 10*1024*1024B
+param *.host*.**.bitrate 20Mbps
+
+vector 0 NCFSWirelessNetwork.hostA.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 NCFSWirelessNetwork.hostB.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 2 NCFSWirelessNetwork.hostA.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 3 NCFSWirelessNetwork.hostB.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 4 NCFSWirelessNetwork.hostA.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 5 NCFSWirelessNetwork.hostA.lo[0].lo rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 6 NCFSWirelessNetwork.hostA.lo[0].lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 7 NCFSWirelessNetwork.hostA.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 8 NCFSWirelessNetwork.hostA.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 9 NCFSWirelessNetwork.hostA.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 10 NCFSWirelessNetwork.hostB.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 11 NCFSWirelessNetwork.hostB.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 12 NCFSWirelessNetwork.hostB.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 13 NCFSWirelessNetwork.hostB.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 14 NCFSWirelessNetwork.hostA.app[0] packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 15 NCFSWirelessNetwork.hostB.app[0] packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 16 NCFSWirelessNetwork.hostB.app[0] throughput:vector ETV
+attr source throughput(packetReceived)
+attr title "throughput, vector"
+attr unit bps
+vector 17 NCFSWirelessNetwork.hostB.app[0] rcvdPkLifetime:vector ETV
+attr interpolationmode none
+attr source dataAge(packetReceived)
+attr title "received packet lifetime, vector"
+attr unit s
+0	4956 225 0 103 0 10.0003048 13 0 3 27 69
+1	5181 144 0 112 0 10.000825223653 8 0 3 15 39
+2	5325 324 0 114 0 10.000825647306 16 0 3 17 35
+3	5649 360 0 112 0 10.000825223653 16 0 3 23 53
+4	6009 96 5 93 1 10 5 110 1048606 2097542 2199149122772
+5	6105 38 7 95 1 10 3 130 130 390 50700
+6	6143 38 7 95 1 10 3 130 130 390 50700
+7	6181 87 10 98 1 10 5 20 110 370 37100
+8	6268 79 10 98 1 10 5 1 5 15 55
+9	6347 396 12 103 1.00014 10.0003048 20 0 2 20 30
+10	6743 140 19 107 1.000205223653 10.000305223653 5 110 1048606 2097542 2199149122772
+11	6883 122 19 107 1.000205223653 10.000305223653 5 1 5 15 55
+12	7005 77 21 109 1.000205223653 10.000305223653 3 20 20 60 1200
+13	7082 244 24 113 1.000385223653 10.000825223653 10 0 2 11 17
+14	7326 60 32 76 1.000414447306 5.500634447306 2 1048598 1048598 2097196 2199115531208
+15	7386 60 46 90 1.420298070959 5.920578070959 2 1048598 1048598 2097196 2199115531208
+16	7446 764 46 90 0.1 5.9 59 0 83887840 83887840 7.0371696998656e+015
+17	8210 74 46 90 1.420298070959 5.920578070959 2 0.419883623653 0.419943623653 0.839827247306 0.35265490445879
+

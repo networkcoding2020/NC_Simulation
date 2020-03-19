@@ -1,0 +1,48 @@
+version 2
+run Wireless02-0-20190109-18:08:14-11124
+attr configname Wireless02
+attr datetime 20190109-18:08:14
+attr experiment Wireless02
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network NCFSWirelessNetworkMore
+attr processid 11124
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.host*.wlan[0].radio.transmitter.communicationRange 550m
+param *.host*.app[0].destAddresses "\"10.0.0.255\""
+param *.runModeString "\"NC\""
+param *.host*.ipv4.arp.typename "\"GlobalArp\""
+param *.configurator.config "xml(\"<config><interface hosts='**' address='10.0.0.x' netmask='255.255.255.0'/><autoroute metric='errorRate'/></config>\")"
+param **.forceBroadcast true
+param *.host*.numApps 1
+param *.host*.app[0].typename "\"NCFSUdpBasicApp\""
+param *.host*.app[0].packetName "\"UDPData\""
+param *.host*.app[0].localPort 5000
+param *.host*.app[0].destPort 5000
+param *.hostA.app[0].destAddresses "\"10.0.0.255\""
+param *.hostA.app[0].startTime 1s
+param *.host*.app[0].startTime 0s
+param *.hostA.app[0].isBootNode true
+param *.host*.app[0].sendInterval 3s
+param *.host*.wlan[0].typename "\"WirelessInterface\""
+param *.host*.wlan[0].radio.typename "\"UnitDiskRadio\""
+param *.host*.wlan[0].mac.typename "\"CsmaCaMac\""
+param *.host*.wlan[0].mac.ackTimeout 300us
+param *.host*.wlan[0].mac.useAck false
+param *.host*.wlan[0].mac.mtu 3*1024*1024
+param *.host*.wlan[0].radio.transmitter.communicationRange 150m
+param *.host*.wlan[0].radio.receiver.ignoreInterference true
+param *.hostA.**.displayCommunicationRange true
+param *.K 10
+param *.fileLength 10*1024*1024B
+param *.host*.**.bitrate 20Mbps
+
+scalar NCFSWirelessNetworkMore.hostB.app[0] "hanhai: receive finish time" 25.419998070959
+scalar NCFSWirelessNetworkMore.hostB1.app[0] "hanhai: receive finish time" 25.839831081111
+
